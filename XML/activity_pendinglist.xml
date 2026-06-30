@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PendinglistActivity">
+    -<RelativeLayout tools:context="${relativePackage}.${activityClass}" android:background="#708090" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#191970" android:textSize="25dp" android:text="Pending Crimes" android:layout_marginTop="25dp" android:layout_marginLeft="18dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/textView1"/>
+    <ListView android:background="#BC8F8F" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="15dp" android:layout_alignParentLeft="true" android:id="@+id/lvpending" android:layout_below="@+id/textView1"> </ListView>
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

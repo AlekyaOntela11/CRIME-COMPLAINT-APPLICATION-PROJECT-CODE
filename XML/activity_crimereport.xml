@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrimereportActivity">
+    -<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#708090"
+        tools:context="${relativePackage}.${activityClass}"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+      <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="141dp"
+            android:text="Date"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="29dp" />
+
+        <ImageView
+            android:id="@+id/crimeviewimg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="16dp"
+            android:text="Crime Report"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#191970"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/viewdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignRight="@+id/crimeviewimg"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="22dp"
+            android:text="Place:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/viewplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="162dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_toRightOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="14dp"
+            android:text="Description:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp" />
+        -
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/textView4">
+
+            <TextView
+                android:id="@+id/viewdescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/finished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/inprocess"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_marginTop="16dp"
+            android:background="#BC8F8F"
+            android:text="Finished" />
+
+        <Button
+            android:id="@+id/inprocess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/scrollView1"
+            android:layout_toRightOf="@+id/scrollView1"
+            android:background="#BC8F8F"
+            android:text="In process" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
